@@ -1,13 +1,17 @@
 import { Negociacao } from "./negociacao.js";
 
 export class Negociacoes{
-  private negociacoes: Array<Negociacao> = [];
+  //são a mesma coisa linhas 5 e 6
+  //private negociacoes: Array<Negociacao> = [];
+  private negociacoes: Negociacao[] = [];
 
   adiciona(negociacao: Negociacao){
     this.negociacoes.push(negociacao);
   }
 
-  lista(): ReadonlyArray<Negociacao>{
+  //são a mesma coisa linhas 13 e 14
+  //lista(): ReadonlyArray<Negociacao>{
+  lista(): readonly Negociacao[] {
     return this.negociacoes;
   }
 
